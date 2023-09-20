@@ -15,3 +15,15 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+  .d-menu-item{
+    padding: 16px;
+    cursor: pointer;
+  }
+
+  .m-menu-item{
+    padding: 10px;
+    cursor: pointer;
+  }
+}
