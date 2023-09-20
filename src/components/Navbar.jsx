@@ -12,7 +12,7 @@ const Navbar = () => {
 
 
   return (
-    <div className='fixed w-full flex justify-between h-[70px] bg-[#05445E] px-4 text-white'>
+    <div className='fixed w-full flex justify-between h-[70px] bg-[#020617] px-4'>
       {/* logo  */}
       <div className='logo-container'>
         <img src={Logo} alt='logo image' style={{ width: '90px' }} />
@@ -31,13 +31,13 @@ const Navbar = () => {
 
 
       {/* hamberger icon  */}
-      <div className='hamberger-menu-container md:hidden z-20 flex items-center' onClick={toggleNav}>
+      <div className='hamberger-menu-container md:hidden z-20 flex items-center text-[#9CA3AF]' onClick={toggleNav}>
         {!nav ? <FiAlignJustify /> : <FiX />}
       </div>
 
       {/* mobile menu  */}
-      <div className={!nav ? 'hidden' : 'mobile-menu-container md:hidden absolute top-0 left-0 w-full bg-[#05445E] pt-4'}>
-        <ul className='mobile-menu flex flex-col items-center justify-center'>
+      <div className={!nav ? 'hidden' : 'mobile-menu-container md:hidden absolute top-0 left-0 w-full bg-[#020617] pt-4'}>
+        <ul className='mobile-menu flex flex-col items-center justify-center text-[#9CA3AF]'>
           <li className='m-menu-item'>Home</li>
           <li className='m-menu-item'>About</li>
           <li className='m-menu-item'>Skills</li>
