@@ -3,7 +3,7 @@ import Image from '../assets/main-one.png'
 
 const Hero = () => {
     return (
-        <div className='hero-section-container pt-[70px] md:px-12 h-fit bg-[#3C4354] px-3'>
+        <div id="hero-section" className='hero-section-container pt-[70px] md:px-12 h-fit bg-[#3C4354] px-3'>
             <div className='hero-wrapper flex flex-col-reverse md:flex-row justify-between items-center md:py-14 py-5'>
                 <div className='hero-content-container md:w-1/2 w-[300px]'>
                     <h5 className='welcome-text pt-2 md:pt-0'>Hello, Welcome</h5>

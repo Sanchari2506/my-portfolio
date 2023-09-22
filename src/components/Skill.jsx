@@ -41,8 +41,8 @@ const Skill = () => {
         }
     ]
     return (
-        <div className='skill-section-container md:py-10 md:px-12 bg-[#3C4354]'>
-            <div className='px-8 skill-wrapper md:w-[1092px] block md:flex md:justify-between md:items-center m-auto gap-x-20'>
+        <div id="skill-section" className='skill-section-container md:py-10 md:px-12 bg-[#3C4354] px-2 py-12'>
+            <div className='px-8 md:px-0 skill-wrapper md:w-[1092px] block md:flex md:justify-between md:items-center m-auto gap-x-20'>
                 <div className='wrapper-one md:w-3/5 w-full mb-8 md:mb-0'>
                     <h2 className='skill-heading md:text-4xl font-bold text-3xl'>
                         <span>My</span>
@@ -57,8 +57,8 @@ const Skill = () => {
                                             <p className='text-xl text-[#EAB308]'>{item.title}</p>
                                             <p className='text-xl text-[#EAB308]'>{item.amount}</p>
                                         </div>
-                                        <div className='skill-progress-wrap rounded-lg bg-[#D9D9D9] w-full h-[20px]'>
-                                            <div className='skill-fill bg-[#EAB308] rounded-lg' style={{width:item.amount,height:'20px'}}></div>
+                                        <div className='skill-progress-wrap rounded-lg bg-[#D9D9D9] w-full md:h-[15px] h-[10px]'>
+                                            <div className='skill-fill bg-[#EAB308] rounded-lg h-full' style={{width:item.amount}}></div>
                                         </div>
                                     </div>
                                 )

@@ -12,7 +12,7 @@ const Navbar = () => {
 
 
   return (
-    <div className='fixed w-full flex justify-between h-[70px] bg-[#020617] px-4 z-50'>
+    <div className='fixed w-full flex justify-between h-[70px] bg-[#020617] px-4 z-50 nav-container'>
       {/* logo  */}
       <div className='logo-container'>
         <img src={Logo} alt='logo image' style={{ width: '90px' }} />
@@ -21,11 +21,11 @@ const Navbar = () => {
       {/* dekstop menu  */}
       <div className='desktop-menu-container hidden md:flex items-center'>
         <ul className='desktop-menu flex flex-wrap'>
-          <li className='d-menu-item'>Home</li>
-          <li className='d-menu-item'>About</li>
-          <li className='d-menu-item'>Skills</li>
-          <li className='d-menu-item'>Works</li>
-          <li className='d-menu-item'>Contact</li>
+          <li className='d-menu-item'><a href='#hero-section'>Home</a></li>
+          <li className='d-menu-item'><a href="#about-section">About</a></li>
+          <li className='d-menu-item'><a href='#skill-section'>Skills</a></li>
+          <li className='d-menu-item'><a href='#services-section'>Works</a></li>
+          <li className='d-menu-item'><a href=''>Contact</a></li>
         </ul>
       </div>
 
@@ -38,11 +38,11 @@ const Navbar = () => {
       {/* mobile menu  */}
       <div className={!nav ? 'hidden' : 'mobile-menu-container md:hidden absolute top-0 left-0 w-full bg-[#020617] pt-4'}>
         <ul className='mobile-menu flex flex-col items-center justify-center text-[#9CA3AF]'>
-          <li className='m-menu-item'>Home</li>
-          <li className='m-menu-item'>About</li>
-          <li className='m-menu-item'>Skills</li>
-          <li className='m-menu-item'>Works</li>
-          <li className='m-menu-item'>Contact</li>
+          <li className='m-menu-item'><a href='#hero-section'>Home</a></li>
+          <li className='m-menu-item'><a href="#about-section">About</a></li>
+          <li className='m-menu-item'><a href='#skill-section'>Skills</a></li>
+          <li className='m-menu-item'><a href='#services-section'>Works</a></li>
+          <li className='m-menu-item'><a href=''>Contact</a></li>
         </ul>
       </div>
     </div>
