@@ -4,7 +4,7 @@ import { BsFillCalendarCheckFill } from "react-icons/bs";
 const Experience = () => {
     return (
         <div id="experience-section" className='skill-section-container md:py-10 md:px-12 bg-[#3C4354] px-2 py-12'>
-            <div className='section-wrap md:w-[1092px] md:m-auto px-10'>
+            <div className='section-wrap md:w-[1092px] md:m-auto px-10 md:px-0'>
                 <h2 className='skill-heading md:text-4xl font-bold text-3xl'>
                     <span>My</span>
                     <span style={{ color: '#EAB308' }}> Experience</span>

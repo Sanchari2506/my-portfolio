@@ -23,17 +23,97 @@ const Contact = () => {
             });
     };
 
+    const downloadResume = ()=>{
+        console.log('downloadResume');
+        const file_url = '/Resume.pdf'
+        const aTag =  document.createElement('a')
+        aTag.href = file_url
+        aTag.setAttribute('download','Resume.pdf')
+        document.body.appendChild(aTag)
+        aTag.click()
+        aTag.remove()
+    }
+
     return (
-        <div className='bg-[#020617] w-full h-fi'>
-            <form ref={form} onSubmit={sendEmail}>
-                <label>Name</label>
-                <input type="text" name="user_name" className='bg-black border-white border' /><br></br><br></br>
-                <label>Email</label>
-                <input type="email" name="user_email" className='bg-black border-white border' /><br></br><br></br>
-                <label>Message</label>
-                <textarea name="message" className='bg-black border-white border' /><br></br><br></br>
-                <input type="submit" value="Send" />
-            </form>
+        <div id='contact-section' className='contact-section-container bg-[#020617] w-full h-fi md:py-10 md:px-12'>
+            <div className='section-wrappper md:w-[1092px] md:m-auto px-10 md:px-0 py-10 md:py-0'>
+                <h2 className='md:text-4xl font-bold text-3xl'>
+                    <span>Contact</span>
+                    <span style={{ color: '#EAB308' }}> Me</span>
+                </h2>
+                <p className="py-3 text-xs md:text-base text-[#B0B0B1]">
+                    I am a software engineer with three years of expertise in Shopify, specializing in theme customization and Shopify app development. My portfolio showcases my proficiency in crafting tailored e-commerce solutions.
+                </p>
+
+                <div className='section-content-wrap md:grid md:grid-cols-2 md:gap-[30px]'>
+                    <div className='personal-info py-3'>
+                        <h3 className='text-2xl text-white underline pb-3'>Personal Information</h3>
+                        <div className='infoe-one'>
+                            <p className="text-base py-3">
+                                <span className="text-[#EAB308]">Address - </span>
+                                9, Bagpota Road, Sarsuna, Kolkata-700061</p>
+                            <p className="text-base py-3">
+                                <span className="text-[#EAB308]">Phone - </span>
+                                +918420281373
+                            </p>
+                            <p className="text-base py-3">
+                                <span className="text-[#EAB308]">Email - </span>
+                                sancharirakshit2709@gmail.com
+                            </p>
+                        </div>
+                        <h3 className='text-2xl text-white underline pb-3'>Educational Qualifications</h3>
+                        <div className='infoe-two'>
+                            <p className="text-base py-3">
+                                <span className="text-[#EAB308]">M.Sc in Computer Science and Information </span>
+                                <br></br>Sarsuna College, University of Calcutta<br></br>
+                                — (68.9%) (CGPA: 7.500), [Aug 2018 - Aug 2020]
+                            </p>
+                            <p className="text-base py-3">
+                                <span className="text-[#EAB308]">B.Sc in Computer Science </span>
+                                <br></br>Sarsuna College, University of Calcutta<br></br>
+                                — (63.5%), [Aug 2018 - Aug 2020]
+                            </p>
+                            <button onClick={downloadResume} type="button" id="contantBtn3" className="contact-btn transition duration-1000 my-3 hover:bg-[#000000] hover:text-white hover:border hover:border-[#EAB308]">My Resume</button>
+                            {/* <p className="text-base py-3">
+                                <span className="text-[#EAB308]">H.S (Science) </span>
+                                <br></br>Barisha Girls’ High School<br></br>
+                                — (69.6%), [Passed Out 2015]
+                            </p>
+                            <p className="text-base py-3">
+                                <span className="text-[#EAB308]">Madhyamik </span>
+                                <br></br>Barisha Girls’ High School<br></br>
+                                — (76.86%), [Passed Out 2013]
+                            </p> */}
+                        </div>
+                    </div>
+                    <div className='contact-form w-full py-3'>
+                        <h3 className='text-2xl text-white underline pb-3'>Get In Touch With Me</h3>
+                        <form ref={form} onSubmit={sendEmail} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                            <div className="mb-4">
+                                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
+                                    Name
+                                </label>
+                                <input name="user_name" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Enter Name"></input>
+                            </div>
+                            <div className="mb-4">
+                                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="useremail">
+                                    Email
+                                </label>
+                                <input name="user_email" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="useremail" type="email" placeholder="Enter Email"></input>
+                            </div>
+                            <div className="mb-4">
+                                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="usermessage">
+                                    Message
+                                </label>
+                                <textarea name="message" className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id="usermessage" />
+                            </div>
+                            <button type="submit" id="contantBtn2" className=" w-full contact-btn transition duration-1000 my-3 hover:bg-[#000000] hover:text-white hover:border hover:border-[#EAB308]">Send</button>
+                            {/* <input type="submit" value="Send" /> */}
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 }

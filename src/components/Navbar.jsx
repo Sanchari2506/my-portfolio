@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className='fixed w-full flex justify-between h-[70px] bg-[#020617] px-4 z-50 nav-container'>
       {/* logo  */}
       <div className='logo-container'>
-        <a href='#'><img src={Logo} alt='logo image' style={{ width: '90px' }} /></a>
+        <a href='/'><img src={Logo} alt='logo image' style={{ width: '90px' }} /></a>
       </div>
 
       {/* dekstop menu  */}

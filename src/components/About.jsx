@@ -25,6 +25,11 @@ const About = () => {
                         My expertise lies in fine-tuning and customizing Shopify themes, as well as developing tailor-made Shopify apps.
                         I'm passionate about e-commerce solutions and continually seek innovative ways to enhance the online shopping experience.
                     </p>
+                    <div className='py-3'>
+                    <a href="#contact-section"
+                        className='contact-btn transition duration-1000 my-3 hover:bg-[#000000] hover:text-white hover:border hover:border-[#EAB308]'
+                    >Contact Me</a>
+                    </div>
                 </div>
             </div>
         </div>

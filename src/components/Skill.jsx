@@ -4,11 +4,7 @@ import Image from '../assets/Group 5.png'
 const Skill = () => {
     const skills = [
         {
-            title: 'HTML',
-            amount: '90%'
-        },
-        {
-            title: 'CSS',
+            title: 'HTML, CSS',
             amount: '90%'
         },
         {
@@ -16,11 +12,11 @@ const Skill = () => {
             amount: '80%'
         },
         {
-            title: 'Database(SQL)',
+            title: 'Database (SQL)',
             amount: '60%'
         },
         {
-            title: 'Database(MongoDB)',
+            title: 'Database (MongoDB)',
             amount: '40%'
         },
         {
