@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className='fixed w-full flex justify-between h-[70px] bg-[#020617] px-4 z-50 nav-container'>
       {/* logo  */}
       <div className='logo-container'>
-        <img src={Logo} alt='logo image' style={{ width: '90px' }} />
+        <a href='#'><img src={Logo} alt='logo image' style={{ width: '90px' }} /></a>
       </div>
 
       {/* dekstop menu  */}
@@ -25,6 +25,7 @@ const Navbar = () => {
           <li className='d-menu-item'><a href="#about-section">About</a></li>
           <li className='d-menu-item'><a href='#skill-section'>Skills</a></li>
           <li className='d-menu-item'><a href='#services-section'>Works</a></li>
+          <li className='d-menu-item'><a href='#experience-section'>Experience</a></li>
           <li className='d-menu-item'><a href=''>Contact</a></li>
         </ul>
       </div>
@@ -42,6 +43,7 @@ const Navbar = () => {
           <li className='m-menu-item'><a href="#about-section">About</a></li>
           <li className='m-menu-item'><a href='#skill-section'>Skills</a></li>
           <li className='m-menu-item'><a href='#services-section'>Works</a></li>
+          <li className='m-menu-item'><a href='#experience-section'>Experience</a></li>
           <li className='m-menu-item'><a href=''>Contact</a></li>
         </ul>
       </div>
