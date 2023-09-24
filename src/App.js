@@ -7,9 +7,6 @@ import Service from "./components/Service";
 import Experience from "./components/Experience"
 import Contact from "./components/Contact";
 function App() {
-  console.log(process.env.REACT_APP_MAIL_SERVICE_ID)
-  console.log(process.env.REACT_APP_MAIL_TEMPLATE_ID)
-  console.log(process.env.REACT_APP_MAIL_PUBLIC_KEY)
   return (
     <div className="App">
      <Navbar/>
