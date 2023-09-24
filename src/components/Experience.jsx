@@ -21,7 +21,7 @@ const Experience = () => {
                         </div>
                         
                         <p className="pb-2 text-base text-[#B0B0B1]">Techwishes Solutions</p>
-                        <h5 className='text-xl text-[#EAB308] text-center'>Internship</h5>
+                        <h5 className='text-xl text-[#EAB308]'>Internship</h5>
                         <div className='flex justify-center items-center py-3'>
                             <ul className='list-outside list-disc text-left'>
                                 <li>Software Engineer</li>
