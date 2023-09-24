@@ -55,7 +55,7 @@ const Skill = () => {
                                     <div key={index} className='skill-item mt-3'>
                                         <div className='skill-item-content flex justify-between items-center'>
                                             <p className='text-xl text-[#EAB308]'>{item.title}</p>
-                                            <p className='text-xl text-[#EAB308]'>{item.amount}</p>
+                                            {/* <p className='text-xl text-[#EAB308]'>{item.amount}</p> */}
                                         </div>
                                         <div className='skill-progress-wrap rounded-lg bg-[#D9D9D9] w-full md:h-[15px] h-[10px]'>
                                             <div className='skill-fill bg-[#EAB308] rounded-lg h-full' style={{width:item.amount}}></div>
