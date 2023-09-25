@@ -1,7 +1,9 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+    const [mail, setMail] = useState(false)
 
     const form = useRef();
 
@@ -18,6 +20,10 @@ const Contact = () => {
             .then((result) => {
                 console.log(result.text);
                 console.log("Send succesfully")
+                setMail(true)
+                setTimeout(function(){
+                    window.location.href = '/';
+                },1500)
             }, (error) => {
                 console.log(error.text);
             });
@@ -109,6 +115,9 @@ const Contact = () => {
                             </div>
                             <button type="submit" id="contantBtn2" className=" w-full contact-btn transition duration-1000 my-3 hover:bg-[#000000] hover:text-white hover:border hover:border-[#EAB308]">Send</button>
                             {/* <input type="submit" value="Send" /> */}
+                            {
+                                mail ? <p className='text-sm text-green-700'>Mail Send Successfully</p> : <p></p>
+                            }
                         </form>
                     </div>
                 </div>

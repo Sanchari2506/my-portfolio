@@ -26,7 +26,7 @@ const Navbar = () => {
           <li className='d-menu-item'><a href='#skill-section'>Skills</a></li>
           <li className='d-menu-item'><a href='#services-section'>Works</a></li>
           <li className='d-menu-item'><a href='#experience-section'>Experience</a></li>
-          <li className='d-menu-item'><a href=''>Contact</a></li>
+          <li className='d-menu-item'><a href='#contact-section'>Contact</a></li>
         </ul>
       </div>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
           <li className='m-menu-item'><a href='#skill-section'>Skills</a></li>
           <li className='m-menu-item'><a href='#services-section'>Works</a></li>
           <li className='m-menu-item'><a href='#experience-section'>Experience</a></li>
-          <li className='m-menu-item'><a href=''>Contact</a></li>
+          <li className='m-menu-item'><a href='#contact-section'>Contact</a></li>
         </ul>
       </div>
     </div>
