@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { FaLinkedin,FaGithubSquare } from "react-icons/fa";
 
 const Contact = () => {
 
@@ -93,7 +94,15 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='contact-form w-full py-3'>
-                        <h3 className='text-2xl text-white underline pb-3'>Get In Touch With Me</h3>
+                        <div className='flex justify-between items-center'>
+                        <h3 className='text-2xl text-white underline pb-3'>
+                            Get In Touch With Me
+                        </h3>
+                        <div className='w-fit flex justify-center items-center gap-2'>
+                        <a href='https://www.linkedin.com/in/sanchari-rakshit-524a82192/' target='_blank'><FaLinkedin className='text-2xl'/></a>
+                        <a href='https://github.com/Sanchari2506' target='_blank'><FaGithubSquare className='text-2xl'/></a>
+                        </div>
+                        </div>
                         <form ref={form} onSubmit={sendEmail} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                             <div className="mb-4">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
