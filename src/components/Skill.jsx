@@ -63,7 +63,7 @@ const Skill = () => {
                     </div>
                 </div>
                 <div className='wrapper-two md:w-2/5 w-full m-auto'>
-                    <img src={Image} alt='image' loading='lazy' style={{ width: '100%', height: 'auto' }} />
+                    <img src={Image} alt='image' loading='lazy' style={{ width: '100%', height: 'auto' }} height='auto' width='100%'/>
                 </div>
             </div>
         </div>

@@ -15,13 +15,14 @@ const Experience = () => {
                 </p>
 
                 <div className='md:grid md:grid-cols-3 pt-4'>
-                    <div className='exp-item py-5 md:border-r border-r-0 border-b border-white md:border-b-0 text-center'>
-                        <div className="py-3 flex justify-center items-center gap-[15px]"><BsFillCalendarCheckFill className='text-[#EAB308] text-2xl'/>
-                        <span className="text-xl text-center">July-2021 - Dec 2021</span>
-                        </div>
+                <div className='exp-item py-5 md:border-r border-r-0 border-b border-white md:border-b-0 text-center'>
+                    <div className="py-3 flex justify-center items-center gap-[15px]">
+                        <BsFillCalendarCheckFill className='text-[#EAB308] text-2xl'/>
+                        <span className=" text-xl">Jan-2023 - Current</span>
+                    </div>
                         
                         <p className="pb-2 text-base text-[#B0B0B1]">Techwishes Solutions</p>
-                        <h5 className='text-xl text-[#EAB308]'>Internship</h5>
+                        <h5 className='text-xl text-[#EAB308] text-center'>Senior Software Engineer</h5>
                         <div className='flex justify-center items-center py-3'>
                             <ul className='list-outside list-disc text-left'>
                                 <li>Software Engineer</li>
@@ -30,6 +31,7 @@ const Experience = () => {
                             </ul>
                         </div>
                     </div>
+                    
                     <div className='exp-item py-5 md:border-r border-r-0 text-center border-b border-white md:border-b-0'>
                     <div className="py-3 flex justify-center items-center gap-[15px]">
                         <BsFillCalendarCheckFill className='text-[#EAB308] text-2xl'/>
@@ -46,14 +48,14 @@ const Experience = () => {
                             </ul>
                         </div>
                     </div>
+                   
                     <div className='exp-item py-5 text-center'>
-                    <div className="py-3 flex justify-center items-center gap-[15px]">
-                        <BsFillCalendarCheckFill className='text-[#EAB308] text-2xl'/>
-                        <span className=" text-xl">Jan-2023 - Current</span>
-                    </div>
+                        <div className="py-3 flex justify-center items-center gap-[15px]"><BsFillCalendarCheckFill className='text-[#EAB308] text-2xl'/>
+                        <span className="text-xl text-center">July-2021 - Dec 2021</span>
+                        </div>
                         
                         <p className="pb-2 text-base text-[#B0B0B1]">Techwishes Solutions</p>
-                        <h5 className='text-xl text-[#EAB308] text-center'>Senior Software Engineer</h5>
+                        <h5 className='text-xl text-[#EAB308]'>Internship</h5>
                         <div className='flex justify-center items-center py-3'>
                             <ul className='list-outside list-disc text-left'>
                                 <li>Software Engineer</li>

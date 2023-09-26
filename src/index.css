@@ -31,13 +31,18 @@ code {
     cursor: pointer;
     color: #9CA3AF;
   }
+  .m-menu-item{
+    margin: 10px;
+  }
 
   .m-menu-item a{
     text-decoration: none;
     padding: 10px;
     cursor: pointer;
     color: #9CA3AF;
+    margin-bottom: 10px;
   }
+
   .welcome-text{
     color: #EAB308;
     font-size: 20px;
@@ -70,7 +75,7 @@ code {
   }
   
   .contact-btn{
-    padding: 8px 20px;
+    padding: 10px 20px;
     text-align: center;
     border-radius: 4px;
     background: #EAB308;
@@ -147,7 +152,7 @@ code {
       line-height: 20px;
     }
     .contact-btn {
-      padding: 8px 16px;
+      padding: 10px 20px;
       font-size: 14px;
     }
     .main-image{

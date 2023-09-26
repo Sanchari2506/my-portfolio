@@ -33,18 +33,18 @@ const Navbar = () => {
 
       {/* hamberger icon  */}
       <div className='hamberger-menu-container md:hidden z-20 flex items-center text-[#9CA3AF]' onClick={toggleNav}>
-        {!nav ? <FiAlignJustify /> : <FiX />}
+        {!nav ? <FiAlignJustify className='text-3xl'/> : <FiX className='text-3xl'/>}
       </div>
 
       {/* mobile menu  */}
       <div className={!nav ? 'hidden' : 'mobile-menu-container md:hidden absolute top-0 left-0 w-full bg-[#020617] pt-4'}>
         <ul className='mobile-menu flex flex-col items-center justify-center text-[#9CA3AF]'>
-          <li className='m-menu-item'><a href='#hero-section'>Home</a></li>
-          <li className='m-menu-item'><a href="#about-section">About</a></li>
-          <li className='m-menu-item'><a href='#skill-section'>Skills</a></li>
-          <li className='m-menu-item'><a href='#services-section'>Works</a></li>
-          <li className='m-menu-item'><a href='#experience-section'>Experience</a></li>
-          <li className='m-menu-item'><a href='#contact-section'>Contact</a></li>
+          <li className='m-menu-item'><a className='text-xl' href='#hero-section'>Home</a></li>
+          <li className='m-menu-item'><a className='text-xl' href="#about-section">About</a></li>
+          <li className='m-menu-item'><a className='text-xl' href='#skill-section'>Skills</a></li>
+          <li className='m-menu-item'><a className='text-xl' href='#services-section'>Works</a></li>
+          <li className='m-menu-item'><a className='text-xl' href='#experience-section'>Experience</a></li>
+          <li className='m-menu-item'><a className='text-xl' href='#contact-section'>Contact</a></li>
         </ul>
       </div>
     </div>

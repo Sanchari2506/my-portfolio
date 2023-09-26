@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from '../assets/Group 6.png'
+import ImageOne from '../assets/Main-Image.png'
 const About = () => {
     return (
         <div id="about-section" className='about-section-container md:py-10 md:px-12 bg-[#020617] px-8 pb-8'>
             <div className='flex flex-col justify-center items-center md:flex-row md:justify-between md:w-[1092px] m-auto'>
                 <div className='about-img-wrapper w-full md:w-1/2 flex justify-start items-center'>
                     <div className='about-img-wrap mt-[50px] md:mt-0' style={{ position: 'relative',width:'100%' }}>
-                        <img src={Image} alt='my-image' loading='eager' className='main-image-about md:w-[450px] w-full m-auto md:m-0' />
+                        <img src={ImageOne} alt='my-image' loading='eager' className='main-image-about md:w-[450px] w-full m-auto md:m-0' height='auto' width='auto'/>
                     </div>
                 </div>
                 <div className='about-content-wrapper w-full md:w-1/2 pt-4 md:pt-0'>
