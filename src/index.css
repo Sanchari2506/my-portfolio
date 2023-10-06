@@ -29,7 +29,6 @@ code {
     text-decoration: none;
     padding: 16px;
     cursor: pointer;
-    color: #9CA3AF;
   }
   .m-menu-item{
     margin: 10px;
@@ -39,7 +38,6 @@ code {
     text-decoration: none;
     padding: 10px;
     cursor: pointer;
-    color: #9CA3AF;
     margin-bottom: 10px;
   }
 
@@ -124,6 +122,9 @@ code {
   animation: typewriter 4s steps(50) 1s 1 normal both;
              /* blinkTextCursor 500ms steps(50) infinite normal; */
 }
+
+
+
 @keyframes typewriter{
   from{
     width: 0;
