@@ -5,10 +5,10 @@ import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const Hero = () => {
     const downloadResume = () => {
         console.log('downloadResume');
-        const file_url = '/Sanchari-resume.pdf'
+        const file_url = '/Sanchari-Rakshit-Resume-2025.pdf'
         const aTag = document.createElement('a')
         aTag.href = file_url
-        aTag.setAttribute('download', 'Sanchari-Resume.pdf')
+        aTag.setAttribute('download', 'Sanchari-Rakshit-Resume-2025.pdf')
         document.body.appendChild(aTag)
         aTag.click()
         aTag.remove()
